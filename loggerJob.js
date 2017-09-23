@@ -1,3 +1,8 @@
+require('@google-cloud/debug-agent').start({
+  projectId: 'kuberentes',
+  keyFilename: './key.json'
+});
+
 const kefir = require('kefir');
 const limit = process.env.repeat || 100;
 console.log(`limit is ${limit}`);
